@@ -9,14 +9,22 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <ul>
-          <li>
-            <Link to="/login">Login</Link>
-          </li>
-          <li>
-            <Link to="/friends">Friends</Link>
-          </li>
-        </ul>
+        <header className="header">
+          <div className="title">
+            <h3>Friends List</h3>
+          </div>
+          <div className="links">
+            <ul>
+              <li>
+                <Link to="/login">Login</Link>
+              </li>
+              <li>
+                <Link to="/protected">Friends</Link>
+              </li>
+            </ul>
+          </div>
+        </header>
+
         <Switch>
           <PrivateRoute exact path="/protected" component={FriendsList} />
           <Route path="/login" component={Login} />

@@ -20,13 +20,13 @@ class Login extends Component {
     });
   };
 
+  //  username: "Lambda School",
+  // password: "i<3Lambd4",
+
   submitLogin = (e) => {
     e.preventDefault();
     axiosWithAuth()
-      .post("http://localhost:5000/api/login", {
-        username: "Lambda School",
-        password: "i<3Lambd4",
-      })
+      .post("http://localhost:5000/api/login", this.state.credentials)
       .then((res) => {
         localStorage.setItem("token", res.data.payload);
         this.props.history.push("/protected");
@@ -37,8 +37,8 @@ class Login extends Component {
   };
   render() {
     return (
-      <div>
-        <form onSubmit={this.submitLogin}>
+      <div className="login">
+        <form onSubmit={this.submitLogin} className="loginForm">
           <input
             type="text"
             name="username"
@@ -51,7 +51,7 @@ class Login extends Component {
             value={this.state.credentials.password}
             onChange={this.handleChange}
           />
-          <button>Log in</button>
+          <button className="loginButton">Log in</button>
         </form>
       </div>
     );
