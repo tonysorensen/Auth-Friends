@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  flex: 2;
+  height: 40px;
+  background-color: azure;
+  padding-top: 10px;
+}
+.title {
+  display: flex;
+  justify-content: flex-start;
+}
+.links {
+  display: flex;
+  justify-content: flex-start;
+}
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  padding: 6px;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.loginForm {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login input {
+  margin: 8px 0 8px;
+}
+.loginButton {
+  width: 30%;
+  padding: 5px;
+}
