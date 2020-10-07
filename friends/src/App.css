@@ -37,7 +37,9 @@ a {
   text-decoration: none;
   padding: 6px;
 }
-
+p {
+  background-color: gray;
+}
 .login {
   display: flex;
   flex-direction: column;
@@ -57,4 +59,42 @@ a {
 .loginButton {
   width: 30%;
   padding: 5px;
+}
+.friendsList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.friend {
+  width: 30%;
+  margin: 20px 0px;
+  border: 1px solid black;
+}
+.addFriendTitle {
+  font-size: 25px;
+  margin-top: 20px;
+  color: #000066;
+}
+.addFriendForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin: 5px 0px;
+  height: 30px;
+  width: 300px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+.btn {
+  margin-top: 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #555;
+  color: #fff;
 }

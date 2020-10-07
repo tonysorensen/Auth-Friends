@@ -33,11 +33,10 @@ class FriendsList extends Component {
             friends.map((friend) => (
               <div className="friend" key={friend.id}>
                 <p>{friend.name}</p>
-                <br />
+
                 <p>{friend.age}</p>
-                <br />
+
                 <p>{friend.email}</p>
-                <br />
               </div>
             ))}
         </div>

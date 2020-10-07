@@ -57,7 +57,9 @@ export default function AddFriendForm(props) {
             onChange={handleChange}
           ></input>
         </label>
-        <button type="submit">Submit</button>
+        <button className="btn" type="submit">
+          Submit
+        </button>
       </form>
     </div>
   );
